@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: url("dorito.png"), auto !important;
+  }
+
+body {
+    background: black;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+h1 {
+    font-size: 4em;
+    font-family: 'Shadows Into Light', 'helvetica Neue'; 
+    color: #ebccf4;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+#logo {
+    width: 8rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;  
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.question {
+    font-size: 28px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ebccf4;
+}
+
+.textbox {
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid mediumslateblue;
+    border-radius: 15px;
+    width: 15em;
+    height: 100px;
+}
+
+input[type=text]:focus {
+    background-color: mediumslateblue;
+  }
+
+input[type="text"] {
+    font-size: 36px;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.intro-wrap {
+    width: 50%;
+    height: auto;
+    
+}
+
+.intro {
+    display: flex;
+    font-size: 30px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #ebccf4;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.button {
+    width: 7em;
+    height: 2em;
+    border-radius: 15px;
+    background-color: mediumslateblue;
+    font-size: 24px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.credits {
+    text-align: center;
+    color: grey;
+    padding-top: 3em;
+}
