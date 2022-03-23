@@ -10,12 +10,12 @@
 
 body {
 	margin: 0;
-	--color-text: #111;
-	--color-bg: #f7f5f0;
-	--color-link: #ccc0a2;
-	--color-link-hover: #000;
-	--color-menu: #000;
-	--color-menu-hover: #f32015;
+	--color-text: #fff;
+	--color-bg: #000;
+	--color-link: #2d00a6;
+	--color-link-hover: #2d00a6;
+	--color-menu: #fff;
+	--color-menu-hover: #fff;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	--cursor-stroke: none; 
@@ -23,12 +23,11 @@ body {
 	--cursor-stroke-width: 1px; 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: roc-grotesk, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body, main {
-	height: 100vh;
-	overflow: hidden;
+	height: auto;
 }
 
 /* Page Loader */
@@ -116,46 +115,7 @@ a:focus-visible {
 	outline: none;
 }
 
-.frame {
-	padding: 1rem;
-	text-align: center;
-	position: relative;
-	z-index: 1000;
-	font-weight: 500;
-}
-
-.frame a:not(.noline)::after {
-	content: '';
-	height: 1px;
-	width: 100%;
-	background: currentColor;
-	position: absolute;
-	left: 0;
-	bottom: 0.15rem;
-}
-
-.frame__title {
-	font-size: 1rem;
-	margin: 0 0 1rem;
-	font-weight: 500;
-}
-
-.frame__links {
-	display: inline;
-}
-
-.frame__links a:not(:last-child) {
-	margin-right: 1rem;
-}
-
-.frame__author {
-	margin: 0 1rem ;
-	display: inline-block;
-}
-
-.frame__related {
-	white-space: nowrap;
-}
+/* MENU */
 
 .menu {
 	padding: 2rem 1rem 3rem;
@@ -174,7 +134,7 @@ a:focus-visible {
 
 .menu__item {
 	margin-bottom: 1rem;
-	font-family: kudryashev-d-contrast-sans, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	cursor: pointer;
 	color: var(--color-menu);
@@ -256,13 +216,13 @@ a:focus-visible {
 }
 
 .content {
-	max-width: 30ch;
-	margin: 0 auto;
+	max-width: 40ch;
+	margin: 7em auto;
 	z-index: -1;
 	position: relative;
 }
 
-.content::after {
+.content:after {
 	content: '';
 	position: fixed;
 	pointer-events: none;
@@ -273,7 +233,7 @@ a:focus-visible {
 	left: 0;
 	z-index: 1;
 	background: linear-gradient(transparent 0%,transparent 70%,var(--color-bg) 100%);
-}
+} 
 
 @media screen and (min-width: 53em) {
 	.frame {
